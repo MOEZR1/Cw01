@@ -28,10 +28,12 @@ public class Dec2Hex {
      * @param args Command line arguments, expecting a single integer.
      */
     public static void main(String[] args) {
-        if (args.length == 0) {
-            throw new IllegalArgumentException("Error: No input argument provided.");
-        }
+    if (args.length == 0) {
+        System.out.println("Error: No input argument provided.");
+        return; // Exit the program
+    }
 
+    
         int decimalNumber;
         try {
             decimalNumber = Integer.parseInt(args[0]);
